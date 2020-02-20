@@ -2,7 +2,9 @@
 body {
     font-family: helvetica;
     height: 3000px; /* Used to enable scrolling */
-    background: linear-gradient(#1cb7ff 0%, #ffae2c 50%, #a31a08 100%);
+    background-image: url("images/bottom.png"), linear-gradient(#ffffff 0%, #1A433F 85.3%);
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
   
 ul {
@@ -20,4 +22,33 @@ li {
   font-size: 12px;
   font-style: italic;
   font-weight: bold;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
