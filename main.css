@@ -1,9 +1,11 @@
 /* CSS comments are just like multi-line JavaScript ones.*/
 body {
     font-family: helvetica;
+    height: 3000px; /* Used to enable scrolling */
+    background: linear-gradient(#1cb7ff 0%, #ffae2c 50%, #a31a08 100%);
   }
   
-  ul {
+ul {
     font-family: monospace;
   }
 li {
