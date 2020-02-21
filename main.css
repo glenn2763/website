@@ -3,7 +3,7 @@ body {
     margin-top: 60px;
     font-family: helvetica;
     height: 3000px; /* Used to enable scrolling */
-    background-image: url("images/blackbottom.png"), linear-gradient(#ffffff 0%, #353535 85.3%);
+    background-image: url("images/blackbottom.png"), linear-gradient(#ffffff 5%, #353535 85.3%);
     background-repeat: no-repeat;
     background-position: right bottom;
   }
