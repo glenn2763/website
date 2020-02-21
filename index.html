@@ -9,11 +9,17 @@
     <link rel="stylesheet" href="main.css">
 </head>
 
+<!-- Nav bar -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="topnav" id="myTopnav">
   <a href="index.html" class="active">home</a>
-  <a href="about.html">about</a>
-  <a href="#projects">projects</a>
-  <a href="#frisbee">frisbee</a>
+  <a href="about.html" class="inactive">about</a>
+  <a href="#projects" class="inactive">projects</a>
+  <a href="#frisbee" class="inactive">frisbee</a>
+  <script src="app.js"></script>
+  <a href="javascript:void(0);" id="bars" class="icon" onclick="topNavResponsive()">
+    <i class="fa fa-bars"></i>
+  <!-- <div onscroll="topNavColor()"> -->
   </a>
 </div>
 
