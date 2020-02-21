@@ -25,4 +25,16 @@ function topNavColor() {
     }
     else {
     }
-  };
+};
+
+function darkMode() {
+    var element = document.body;
+    var button = document.getElementById("myButton");
+    element.classList.toggle("dark-mode");
+    if (button.className === "button") {
+        button.classList.add("dark-mode");
+    }
+    else {
+        button.classList.remove("dark-mode");
+    }
+}
