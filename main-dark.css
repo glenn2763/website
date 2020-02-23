@@ -6,11 +6,11 @@ body {
     margin-top: 60px;
     font-family: helvetica;
     height: 3000px; /* Used to enable scrolling */
-    background-image: url("images/darkbottom.png"), linear-gradient(#ffffff 5%, #767676 85.3%);
+    background-image: url("images/darkbottom.png"), linear-gradient(var(--offBlack) 5%, #767676 85.3%);
     background-repeat: no-repeat;
     background-position: right bottom;
     position: relative;
-    color: var(--offBlack);
+    color: white;
   }
 ul {
   font-family: monospace;
@@ -31,7 +31,7 @@ li {
 
 /* Add a white background color to the top navigation */
 .topnav {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--offBlack);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -43,7 +43,7 @@ li {
 .topnav a {
   float: left;
   display: block;
-  color: var(--offBlack);
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,14 +52,14 @@ li {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: var(--offBlack);
+  background-color: var(--offBlack);
+  color: rgb(255, 255, 255);
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: var(--offBlack);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: var(--offBlack);
 }
 
 .topnav .icon {
@@ -110,10 +110,10 @@ li {
 }
 
 .button {
-  background-color: rgb(255, 255, 255);
-  border: 2px solid var(--offBlack);
-  color: var(--offBlack);
+  background-color: var(--offBlack);
+  border: 2px solid rgb(255, 255, 255);
   padding: 15px 32px;
+  color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -125,8 +125,8 @@ li {
   z-index: 1;
 }
 .button:hover {
-  background-color: var(--offBlack); 
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: var(--offBlack);
 }
 
 footer {

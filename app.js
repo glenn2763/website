@@ -27,14 +27,14 @@ function topNavColor() {
     }
 };
 
-function darkMode() {
-    var element = document.body;
+function toggleMode() {
     var button = document.getElementById("myButton");
-    element.classList.toggle("dark-mode");
-    if (button.className === "button") {
-        button.classList.add("dark-mode");
+    if (getActiveStyleSheet() == 'default') {
+        setActiveStyleSheet('dark-mode');
+        button.innerHTML = 'Light Mode';
     }
     else {
-        button.classList.remove("dark-mode");
+        setActiveStyleSheet('default');
+        button.innerHTML = 'Dark Mode';
     }
 }
