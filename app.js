@@ -1,22 +1,12 @@
 'use strict'
 
 var data = 'default'
-if (localStorage.getItem('mode')) {
-    data = localStorage.getItem('mode');
+if (sessionStorage.getItem('mode')) {
+    data = sessionStorage.getItem('mode');
 }
-localStorage.clear();
-localStorage.setItem('mode', data);
+sessionStorage.setItem('mode', data);
+setActiveStyleSheet(data);
 
-function setModeAcrossPage() {
-    data = localStorage.getItem('mode');
-    setActiveStyleSheet(data);
-    var button = document.getElementById("myButton");
-    if (data == 'dark-mode') {
-        button.innerHTML = 'Light Mode';
-    }
-}
-
-window.onload = setModeAcrossPage;
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function topNavResponsive() {
@@ -28,28 +18,17 @@ function topNavResponsive() {
     }
 }
 
-function topNavColor() {
-    var x = document.getElementById("myTopnav");
-    if (window.pageYOffset > x.height()) {
-        x.className += " scrolled";
-    }
-    else {
-    }
-};
-
 function toggleMode() {
     var button = document.getElementById("myButton");
     if (getActiveStyleSheet() == 'default') {
         setActiveStyleSheet('dark-mode');
         button.innerHTML = 'Light Mode';
-        localStorage.clear();
-        localStorage.setItem('mode', 'dark-mode');
+        sessionStorage.setItem('mode', 'dark-mode');
     }
     else {
         setActiveStyleSheet('default');
         button.innerHTML = 'Dark Mode';
-        localStorage.clear();
-        localStorage.setItem('mode', 'default');
+        sessionStorage.setItem('mode', 'default');
     }
 }
 
@@ -73,4 +52,10 @@ function getActiveStyleSheet() {
     return null;
 }
 
+function checkButton() {
+    var button = document.getElementById("myButton");
+    if (data == 'dark-mode') {
+        button.innerHTML = 'Light Mode';
+    }
+}
 

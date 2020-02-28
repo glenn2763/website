@@ -5,13 +5,13 @@
 body {
     margin-top: 60px;
     font-family: helvetica;
-    height: 3000px; /* Used to enable scrolling */
+    height: 3000px; 
     background-image: url("images/darkbottom.png"), linear-gradient(var(--offBlack) 5%, #767676 85.3%);
     background-repeat: no-repeat;
     background-position: right bottom;
     position: relative;
     color: white;
-  }
+}
 ul {
   font-family: monospace;
 }
