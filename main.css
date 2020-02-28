@@ -11,7 +11,13 @@ body {
     background-position: right bottom;
     position: relative;
     color: var(--offBlack);
-  }
+}
+
+body.vidBody {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 ul {
   font-family: monospace;
 }
