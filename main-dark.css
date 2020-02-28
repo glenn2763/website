@@ -68,8 +68,15 @@ li {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
+  #myFooter {
+    text-align: left;
+  }
   .topnav a:not(:first-child) {display: none;}
   .topnav a:first-child {
+    background-color: white;
+    color: var(--offBlack);
+  }
+  .topnav.responsive a:first-child {
     background-color: var(--offBlack);
     color: white;
   }
@@ -84,6 +91,8 @@ li {
   }
   .topnav.responsive a.active {
     font-weight: 900;
+    background: var(--offBlack);
+    color: white;
   }
   .topnav.responsive a.icon {
     position: fixed;
@@ -159,7 +168,13 @@ footer {
   border-radius: 50%;
   color: white;
 }
-
+#github {
+  position: relative;
+  bottom: -22px;
+}
+#github:hover {
+  opacity: 0.7;
+}
 .fa:hover {
   opacity: 0.7;
 }

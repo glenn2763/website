@@ -1,30 +1,44 @@
 <!DOCTYPE html>
-<!-- This is an HTML comment. -->
+<script src="app.js"></script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Glenn Wysen</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css" title="default" />
+    <link rel="alternate stylesheet" type="text/css" href="main-dark.css" title="dark-mode" />
+    <link rel="icon stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<body>
 <!-- Nav bar -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="burger stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="topnav" id="myTopnav">
   <a href="index.html" class="inactive">home</a>
-  <a href="about.html"class="inactive">about</a>
+  <a href="about.html" class="inactive">about</a>
   <a href="projects.html" class="inactive">projects</a>
   <a href="frisbee.html" class="active">frisbee</a>
-  <script src="app.js"></script>
   <a href="javascript:void(0);" id="bars" class="icon" onclick="topNavResponsive()">
     <i class="fa fa-bars"></i>
+  <!-- <div onscroll="topNavColor()"> -->
   </a>
 </div>
+<noscript>You need to enable JavaScript to view the full site.</noscript>
 
-  <div class="myVideo">
-    <video autoplay muted loop>
-    <source src="vid/nkol.mp4" type="video/mp4">
-    </video>
-  </div>
+<div class="myVideo">
+  <video autoplay muted>
+  <source src="vid/intro.mp4" type="video/mp4">
+  </video>
+</div>
 
+<button class="button" id="myButton" onclick="toggleMode()">Dark Mode</button>
+
+<footer id='myFooter'>
+  <a href="https://www.linkedin.com/in/glenn-wysen-4172a2159/" class="fa social fa-linkedin"></a>
+  <a href="mailto:gwysen@gmail.com" class="fa social fa-envelope"></a>
+  <a id='github' href="https://github.com/glenn2763"><img alt="github" src="images/github.png" width="60" height='56'></a>
+</footer>
+
+</body>
 </html>
