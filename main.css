@@ -5,11 +5,11 @@
 body {
     margin-top: 60px;
     font-family: helvetica;
+    background: var(--offBlack);
     height: 3000px; /* Used to enable scrolling */
-    background: white;
-    background-image: url("images/whitebottom.png"), linear-gradient(#ffffff 5%, #767676 85.3%);
+    background-image: url("images/22bottom.png"), linear-gradient(#ffffff 5%, #767676 85.3%);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: 100% 100%;
     position: relative;
     color: var(--offBlack);
 }
@@ -36,9 +36,8 @@ li {
   font-weight: bold;
 }
 
-/* Add a white background color to the top navigation */
 .topnav {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--offBlack);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -50,7 +49,7 @@ li {
 .topnav a {
   float: left;
   display: block;
-  color: var(--offBlack);
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -59,14 +58,14 @@ li {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: var(--offBlack);
+  background-color: var(--offBlack);
+  color: rgb(255, 255, 255);
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: var(--offBlack);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: var(--offBlack);
 }
 
 .topnav .icon {

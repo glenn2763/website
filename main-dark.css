@@ -36,7 +36,6 @@ li {
   font-weight: bold;
 }
 
-/* Add a white background color to the top navigation */
 .topnav {
   background-color: var(--offBlack);
   overflow: hidden;
