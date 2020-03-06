@@ -80,6 +80,10 @@ look good on small screens (display the links vertically instead of horizontally
   }
   .topnav a:not(:first-child) {display: none;}
   .topnav a:first-child {
+    background-color: white;
+    color: var(--offBlack);
+  }
+  .topnav.responsive a:first-child {
     background-color: var(--offBlack);
     color: white;
   }
@@ -94,6 +98,8 @@ look good on small screens (display the links vertically instead of horizontally
   }
   .topnav.responsive a.active {
     font-weight: 900;
+    background: var(--offBlack);
+    color: white;
   }
   .topnav.responsive a.icon {
     position: fixed;
