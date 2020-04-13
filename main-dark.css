@@ -5,9 +5,9 @@
 body {
     margin-top: 60px;
     font-family: helvetica;
-    height: 3000px; 
     background: var(--offBlack);
-    background-image: url("images/22bottom.png"), linear-gradient(var(--offBlack) 5%, #767676 85.3%);
+    height: 770px;
+    background-image: url("images/22bottom.png"), linear-gradient(var(--offBlack) 5%, #767676 77%);
     background-repeat: no-repeat;
     background-position: right bottom;
     position: relative;
@@ -183,4 +183,40 @@ footer {
 }
 .fa:hover {
   opacity: 0.7;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 10em;
+  box-sizing: border-box;
+  height: 160px;
+  width: 100%;
+  display:flex;
+}
+
+p.info {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 220%;
+}
+
+.imageResponsive {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+a.inlineLink:visited {
+  color: rgb(153, 85, 218);
+}
+
+.resume-flex-item {
+  padding-top: 1em;
+  padding-left: 25%;
+  padding-right: 10em;
 }

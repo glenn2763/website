@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="main.css" title="default" />
     <link rel="alternate stylesheet" type="text/css" href="main-dark.css" title="dark-mode" />
     <link rel="icon stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico"> 
     <link rel="apple-touch-icon" href="images/favicon.ico"> 
@@ -18,17 +19,60 @@
 <link rel="burger stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="topnav" id="myTopnav">
   <a href="index.html" class="active">home</a>
-  <a href="about.html" class="inactive">about</a>
   <a href="projects.html" class="inactive">projects</a>
   <a href="frisbee.html" class="inactive">frisbee</a>
-  <a href="resume.html" class="inactive">resume</a>
+  <a href="contact.html" class="inactive">contact</a>
   <a href="javascript:void(0);" id="bars" class="icon" onclick="topNavResponsive()">
     <i class="fa fa-bars"></i>
   <!-- <div onscroll="topNavColor()"> -->
   </a>
 </div>
-<h1>Website under maintenance</h1>
 <noscript>You need to enable JavaScript to view the full site.</noscript>
+<div>
+  <p class="bigIntroText">
+    Hi. I'm Glenn.
+  </p>
+  <p class="introText">
+    A software engineer living in the Bay Area.
+  </p>
+  <p class="smallIntroText">
+    I study Computer Science and Astrophysics at UC Berkeley. When I'm not in class, you can find me playing ultimate 
+    frisbee, hiking in Marin, or coding.
+  </p>
+  <img src="images/glenn.JPG" alt="Glenn Bridge" class="profileImage">
+</div>
+
+<img src="images/frisbee.svg" alt="transition" class="frisbeeImage">
+
+<div class="fadein">
+  <img src="images/spheres.png">
+  <img src="images/supersample.png">
+  <img src="images/normalizedPot.png">
+  <img src="images/lucy.png">
+</div>
+
+<p class="graphicsTitle">
+  Computer Graphics
+</p>
+<p class="graphicsText">
+  An area of computer science I'm interested in right now is graphics. You can find more information about the projects I've 
+  done <a href="projects.html">here</a>. 
+</p>
+
+<img src="images/planets.svg" alt="transition" class="planetsImage">
+
+<p class="workTitle">
+  Physics Research
+</p>
+
+<p class="workText">
+  In 2018 I had the opportunity to work at the US Air Force Research Lab in Albuquerque, NM. I spent the summer writing code 
+  for a thermosphere/ionosphere model that is currently being used to keep satellites safe in low earth orbit. More details 
+  about my work can be found on my <a href="Resume.pdf">resume</a>.
+</p>
+
+<img src="images/afrl.jpg" alt="transition" class="workImage">
+
 
 <button class="button" id="myButton" onclick="toggleMode()">Dark Mode</button>
 
@@ -39,6 +83,5 @@
 </footer>
 
 <script>checkButton()</script>
-
 </body>
 </html>
