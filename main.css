@@ -180,13 +180,15 @@ footer {
   right: 11.4%;
   width: 100%;
   height: auto;
-  max-width: 600px;
+  /* max-width: 600px; */
+  max-width: 36vw;
 }
 
 .bigIntroText {
   position: absolute;
   font-family: titles, sans-serif;
-  font-size: 80px;
+  /* font-size: 80px; */
+  font-size: 4.8vw;
   top: 448px;
   left: 15%;
   right: 56%;
@@ -195,7 +197,8 @@ footer {
 .introText {
   position: absolute;
   font-family: subtitles, sans-serif;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 1.8vw;
   top: 640px;
   left: 11.4%;
   right: 56%;
@@ -204,7 +207,8 @@ footer {
 .smallIntroText {
   position: absolute;
   font-family: bodyText, sans-serif;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
   top: 750px;
   left: 11.4%;
   right: 57.5%;
@@ -218,7 +222,8 @@ footer {
   right: 35%;
   width: 100%;
   height: auto;
-  max-width: 600px;
+  /* max-width: 600px; */
+  max-width: 36vw;
 }
 
 .fadein {
@@ -231,12 +236,14 @@ footer {
   position:absolute;
   left:0;
   top:0;
+  max-width: 36vw;
 }
 
 .graphicsTitle {
   position: absolute;
   font-family: subtitles, sans-serif;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 1.8vw;
   top: 1290px;
   left: 56%;
   right: 11.4%;
@@ -245,7 +252,8 @@ footer {
 .graphicsText {
   position: absolute;
   font-family: bodyText, sans-serif;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
   top: 1400px;
   left: 56%;
   right: 11.4%;
@@ -258,7 +266,8 @@ footer {
   right: 40%;
   width: 100%;
   height: auto;
-  max-width: 400px;
+  /* max-width: 400px; */
+  max-width: 24vw;
 }
 
 .workImage {
@@ -267,13 +276,14 @@ footer {
   right: 11.4%;
   width: 100%;
   height: auto;
-  max-width: 600px;
+  max-width: 36vw;
 }
 
 .workTitle {
   position: absolute;
   font-family: subtitles, sans-serif;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 1.8vw;
   top: 1970px;
   left: 11.4%;
   right: 56%;
@@ -282,7 +292,8 @@ footer {
 .workText {
   position: absolute;
   font-family: bodyText, sans-serif;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
   top: 2080px;
   left: 11.4%;
   right: 56%;
@@ -327,10 +338,10 @@ footer {
   animation-fill-mode: forwards;
   position: absolute;
   font-family: titles, sans-serif;
-  font-size: 80px;
-  top: 448px;
-  left: 60%;
-  right: 10%; 
+  /* font-size: 80px; */
+  font-size: 4.8vw;
+  top: 400px;
+  right: 18%; 
 } 
 
 @keyframes fadeInAnimation { 
@@ -345,57 +356,72 @@ footer {
 .frisbeeIntro {
   position: absolute;
   font-family: bodyText, sans-serif;
-  font-size: 20px;
-  top: 1000px;
-  left: 11.4%;
-  right: 56%;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  top: 1300px;
+  left: 8%;
+  right: 64%;
   text-align: justify;
+}
+
+.frisbeeTransition {
+  position: absolute;
+  top: 640px;
+  right: 30%;
+  width: 100%;
+  height: auto;
+  /* max-width: 600px; */
+  max-width: 36vw;
 }
 
 .frisbeePictures1 {
   position: absolute;
   right: 900px;
-  top: 800px;
+  top: 950px;
 }
 
 .frisbeePictures1 img {
   position: absolute;
   left: 0;
   top: 0;
+  max-width: 24vw;
 }
 
 .frisbeePictures2 {
   position: absolute;
   right: 500px;
-  top: 800px;
+  top: 950px;
 }
 
 .frisbeePictures2 img {
   position: absolute;
   left: 0;
   top: 0;
+  max-width: 24vw;
 }
 
 .frisbeePictures3 {
   position: absolute;
   right: 900px;
-  top: 1200px;
+  top: 1350px;
 }
 
 .frisbeePictures3 img {
   position: absolute;
   left: 0;
   top: 0;
+  max-width: 24vw;
 }
 
 .frisbeePictures4 {
   position: absolute;
   right: 500px;
-  top: 1200px;
+  top: 1350px;
 }
 
 .frisbeePictures4 img {
   position: absolute;
   left: 0;
   top: 0;
+  max-width: 24vw;
 }
