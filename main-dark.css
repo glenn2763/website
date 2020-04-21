@@ -2,69 +2,67 @@
   --offBlack: #222222;
 }
 
+@font-face {
+  font-family: titles;
+  src: url("fonts/Title.ttf");
+}
+@font-face {
+  font-family: subtitles;
+  src: url("fonts/Subtitle.ttf");
+}
+@font-face {
+  font-family: bodyText;
+  src: url("fonts/Lora.ttf");
+}
+
 body {
-    margin-top: 60px;
-    font-family: helvetica;
-    background: var(--offBlack);
-    height: 770px;
-    background-image: url("images/22bottom.png"), linear-gradient(var(--offBlack) 5%, #767676 77%);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    position: relative;
-    color: white;
+  font-family: subtitles, sans-serif;
+  background: var(--offBlack);
+  height: 2700px;
+  background-image: url("images/22bottom.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  position: relative;
+  color: white;
 }
 
-body.vidBody {
-  margin-left: 0;
-  margin-right: 0;
+a.inlineLink:visited {
+  color: rgb(153, 85, 218);
 }
 
-ul {
-  font-family: monospace;
-}
-li {
-  list-style: circle;
-}
-
-.list {
-  list-style: square;
-}
-
-#date {
-  font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
+a.inlineLink {
+  color: rgb(83, 172, 255);
 }
 
 .topnav {
   background-color: var(--offBlack);
   overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  float: none;
+  position: absolute;
+  right: 40%;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
-  color: #ffffff;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 38px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: subtitles, sans-serif;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: var(--offBlack);
-  color: rgb(255, 255, 255);
+  background-color: white;
+  color: var(--offBlack);
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: var(--offBlack);
 }
 
@@ -126,9 +124,9 @@ li {
 
 .button {
   background-color: var(--offBlack);
-  border: 2px solid rgb(255, 255, 255);
-  padding: 15px 32px;
+  border: 2px solid white;
   color: white;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -139,6 +137,7 @@ li {
   right: 0;
   z-index: 1;
 }
+
 .button:hover {
   background-color: rgb(255, 255, 255);
   color: var(--offBlack);
@@ -147,22 +146,9 @@ li {
 footer {
   position: absolute;
   text-align: center;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   z-index: 0;
-}
-
-.myVideo { 
-  height: 500px;
-}
-
-.myVideo video { 
-  width: 100%;
-  height: auto;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -999;
 }
 
 .fa.social {
@@ -174,49 +160,394 @@ footer {
   border-radius: 50%;
   color: white;
 }
+
 #github {
   position: relative;
   bottom: -22px;
 }
+
 #github:hover {
   opacity: 0.7;
 }
+
 .fa:hover {
   opacity: 0.7;
 }
 
-.flex-container {
-  display: flex;
-}
+/* ------------------------------- Home page ------------------------------- */
 
-.flex-item {
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 10em;
-  box-sizing: border-box;
-  height: 160px;
+.profileImage {
+  position: absolute;
+  top: 150px; 
+  right: 11.4%;
   width: 100%;
-  display:flex;
+  height: auto;
+  /* max-width: 600px; */
+  max-width: 36vw;
 }
 
-p.info {
-  font-family: Arial, Helvetica, sans-serif;
+.bigIntroText {
+  color: white;
+  position: absolute;
+  font-family: titles, sans-serif;
+  /* font-size: 80px; */
+  font-size: 4.8vw;
+  top: 448px;
+  left: 15%;
+  right: 56%;
+}
+
+.introText {
+  color: white;
+  position: absolute;
+  font-family: subtitles, sans-serif;
+  /* font-size: 30px; */
+  font-size: 1.8vw;
+  top: 640px;
+  left: 11.4%;
+  right: 56%;
+}
+
+.smallIntroText {
+  color: white;
+  position: absolute;
+  font-family: bodyText, sans-serif;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  top: 750px;
+  left: 11.4%;
+  right: 57.5%;
+  text-align: justify;
+}
+
+.frisbeeImage {
+  position: absolute;
+  transform: scaleX(-1);
+  top: 820px;
+  right: 35%;
+  width: 100%;
+  height: auto;
+  /* max-width: 600px; */
+  max-width: 36vw;
+}
+
+.fadein {
+  position: absolute;
+  top: 1090px;
+  left: 11.4%;
+}
+
+.fadein img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 36vw;
+}
+
+.graphicsTitle {
+  color: white;
+  position: absolute;
+  font-family: subtitles, sans-serif;
+  /* font-size: 30px; */
+  font-size: 1.8vw;
+  top: 1290px;
+  left: 56%;
+  right: 11.4%;
+}
+
+.graphicsText {
+  color: white;
+  position: absolute;
+  font-family: bodyText, sans-serif;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  top: 1400px;
+  left: 56%;
+  right: 11.4%;
+  text-align: justify;
+}
+
+.planetsImage {
+  position: absolute;
+  top: 1620px;
+  right: 40%;
+  width: 100%;
+  height: auto;
+  /* max-width: 400px; */
+  max-width: 24vw;
+}
+
+.workImage {
+  position: absolute;
+  top: 1850px; 
+  right: 11.4%;
+  width: 100%;
+  height: auto;
+  max-width: 36vw;
+}
+
+.workTitle {
+  color: white;
+  position: absolute;
+  font-family: subtitles, sans-serif;
+  /* font-size: 30px; */
+  font-size: 1.8vw;
+  top: 1970px;
+  left: 11.4%;
+  right: 56%;
+}
+
+.workText {
+  color: white;
+  position: absolute;
+  font-family: bodyText, sans-serif;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  top: 2080px;
+  left: 11.4%;
+  right: 56%;
+  text-align: justify;
+}
+
+/* ------------------------------- Frisbee page ------------------------------- */
+
+
+#frisbeeBody {
+  height: 2800px;
+}
+
+.myVideo video { 
+  position: absolute;
+  top: 150px;
+  left: 8%;
+  width: 50%;
+  height: auto;
+}
+
+.ugmoImage {
+  position: absolute;
+  bottom: 400px;
+  left: 7.5vw;
+  width: 85vw;
+  height: auto;
+}
+
+.ugmoContainer {
   text-align: center;
-  font-size: 220%;
 }
 
-.imageResponsive {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
+.ugmoCaption {
+  color: white;
+  margin-top: 2400px;
+  display: inline-block;
 }
 
-a.inlineLink:visited {
-  color: rgb(153, 85, 218);
+.frisbeeTitle { 
+  color: white;
+  animation: fadeInAnimation ease 4s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
+  position: absolute;
+  font-family: titles, sans-serif;
+  /* font-size: 80px; */
+  font-size: 4.8vw;
+  top: 400px;
+  right: 18%; 
+} 
+
+@keyframes fadeInAnimation { 
+  0% { 
+    opacity: 0; 
+  }
+  100% { 
+    opacity: 1; 
+  } 
 }
 
-.resume-flex-item {
-  padding-top: 1em;
-  padding-left: 25%;
-  padding-right: 10em;
+.frisbeeIntro {
+  color: white;
+  position: absolute;
+  font-family: bodyText, sans-serif;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  top: 1300px;
+  left: 8%;
+  right: 64%;
+  text-align: justify;
+}
+
+.frisbeeTransition {
+  position: absolute;
+  top: 640px;
+  right: 30%;
+  width: 100%;
+  height: auto;
+  /* max-width: 600px; */
+  max-width: 36vw;
+}
+
+.frisbeePictures1 {
+  position: absolute;
+  right: 55vw;
+  bottom: 1450px;
+}
+
+.frisbeePictures1 img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 24vw;
+}
+
+.frisbeePictures2 {
+  position: absolute;
+  right: 31.2vw;
+  bottom: 1450px;
+}
+
+.frisbeePictures2 img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 24vw;
+}
+
+.frisbeePictures3 {
+  position: absolute;
+  right: 55vw;
+  top: 1350px;
+}
+
+.frisbeePictures3 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 24vw;
+}
+
+.frisbeePictures4 {
+  position: absolute;
+  right: 31.2vw;
+  top: 1350px;
+}
+
+.frisbeePictures4 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 24vw;
+}
+
+/* ------------------------------- Contact page ------------------------------- */
+
+#contactBody {
+  height: 100vh;
+}
+
+#contactThanks {
+  color: white;
+  position: absolute;
+  font-family: bodyText, sans-serif;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  top: 35vh;
+  left: 11.4%;
+  right: 57.5%;
+  text-align: justify;
+}
+
+.resumeButton {
+  position: absolute;
+  right: 25vw;
+  top: 32vh;
+  background-color: white;;
+  border: none;
+  color: var(--offBlack);
+  padding: 70px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resumeButton:hover {opacity: 1}
+
+/* ------------------------------- Projects page ------------------------------- */
+
+#projectBody {
+  height: 225vh;
+}
+
+#proj1container {
+  left: -20vw;
+  top: 20vh;
+  opacity: 0.8;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj1container:hover {
+  opacity: 1
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#proj2container {
+  right: -20vw;
+  top: 35vh;
+  opacity: 0.8;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj2container:hover {
+  opacity: 1
+}
+
+#proj3-1container {
+  left: -20vw;
+  top: 50vh;
+  opacity: 0.8;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj3-1container:hover {
+  opacity: 1
+}
+
+#proj3-2container {
+  right: -20vw;
+  top: 65vh;
+  opacity: 0.8;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj3-2container:hover {
+  opacity: 1
 }

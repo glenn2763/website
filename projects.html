@@ -18,10 +18,10 @@
 <!-- Nav bar -->
 <link rel="burger stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="inactive">home</a>
-  <a href="projects.html" class="active">projects</a>
-  <a href="frisbee.html" class="inactive">frisbee</a>
-  <a href="contact.html" class="inactive">contact</a>
+  <a href="index.html" class="inactive">Home</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="frisbee.html" class="inactive">Frisbee</a>
+  <a href="contact.html" class="inactive">Contact</a>
   <a href="javascript:void(0);" id="bars" class="icon" onclick="topNavResponsive()">
     <i class="fa fa-bars"></i>
   <!-- <div onscroll="topNavColor()"> -->
@@ -29,22 +29,26 @@
 </div>
 <noscript>You need to enable JavaScript to view the full site.</noscript>
 
-<body>
-  <p>CS 184 Work (Berkeley computer graphics class)</p>
-  <ul>
-      <li><a href="https://cal-cs184-student.github.io/p1-rasterizer-sp20-glenn2763/" title="Berkeley CS 184 Project" 
-          target="_blank" class="inlineLink">Rasterization</a>
-        </li>
-        <li><a href="https://cal-cs184-student.github.io/p2-meshedit-sp20-glenn2763/" title="Berkeley CS 184 Project" 
-          target="_blank" class="inlineLink">Mesh Editor</a>
-        </li>
-        <li><a href="https://cal-cs184-student.github.io/p3-1-pathtracer-sp20-glenn2763/" title="Berkeley CS 184 Project" 
-          target="_blank" class="inlineLink">Pathtracer</a>
-        </li>
-        <li><a href="https://cal-cs184-student.github.io/p3-2-pathtracer-sp20-glenn2763/" title="Berkeley CS 184 Project" 
-          target="_blank" class="inlineLink">Pathtracer pt. 2</a>
-        </li>
-  </ul>
+<body id="projectBody">
+    <div id="proj1container">
+      <a href="https://cal-cs184-student.github.io/p1-rasterizer-sp20-glenn2763/"><img alt="bunnies" src="images/Lion.jpeg"></a>
+      <div class="centered">Rasterizer</div>
+    </div>
+    <div id="proj2container">
+      <a href="https://cal-cs184-student.github.io/p2-meshedit-sp20-glenn2763/"><img alt="bunnies" src="images/teapot.jpg"
+        class="proj2"></a>
+        <div class="centered">MeshEdit</div>
+    </div>
+    <div id="proj3-1container">
+      <a href="https://cal-cs184-student.github.io/p3-1-pathtracer-sp20-glenn2763/"><img alt="bunnies" src="images/bunnies.jpg"
+        class="proj3-1"></a>
+        <div class="centered">Pathtracer Pt. 1</div>
+    </div>
+    <div id="proj3-2container">
+      <a href="https://cal-cs184-student.github.io/p3-2-pathtracer-sp20-glenn2763/"><img alt="bunnies" src="images/dragons.jpg"
+        class="proj3-2"></a>
+        <div class="centered">Pathtracer Pt. 2</div>
+    </div>
 </body>
 <button class="button" id="myButton" onclick="toggleMode()">Dark Mode</button>
 

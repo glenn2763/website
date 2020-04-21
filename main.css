@@ -16,20 +16,14 @@
 }
 
 body {
-    font-family: subtitles, sans-serif;
-    background: white;
-    height: 2700px;
-    background-image: url("images/22bottom.png");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    position: relative;
-    color: var(--offBlack);
-}
-
-#date {
-  font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
+  font-family: subtitles, sans-serif;
+  background: white;
+  height: 2700px;
+  background-image: url("images/22bottom.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  position: relative;
+  color: var(--offBlack);
 }
 
 .topnav {
@@ -54,13 +48,13 @@ body {
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: var(--offBlack);
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: rgb(255, 255, 255);
-  color: var(--offBlack);
+  background-color: var(--offBlack);
+  color: white;
 }
 
 .topnav .icon {
@@ -121,7 +115,7 @@ look good on small screens (display the links vertically instead of horizontally
 }
 
 .button {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border: 2px solid var(--offBlack);
   color: var(--offBlack);
   padding: 15px 32px;
@@ -172,7 +166,7 @@ footer {
   opacity: 0.7;
 }
 
-/* ------------------------------- Home page -------------------------------*/
+/* ------------------------------- Home page ------------------------------- */
 
 .profileImage {
   position: absolute;
@@ -233,9 +227,9 @@ footer {
 }
 
 .fadein img {
-  position:absolute;
-  left:0;
-  top:0;
+  position: absolute;
+  left: 0;
+  top: 0;
   max-width: 36vw;
 }
 
@@ -300,10 +294,10 @@ footer {
   text-align: justify;
 }
 
-/* ------------------------------- Frisbee page -------------------------------*/
+/* ------------------------------- Frisbee page ------------------------------- */
 
 #frisbeeBody {
-  height: 2900px;
+  height: 2800px;
 }
 
 .myVideo video { 
@@ -317,9 +311,8 @@ footer {
 .ugmoImage {
   position: absolute;
   bottom: 400px;
-  right: 5%;
-  left: 5%;
-  width: 90%;
+  left: 7.5vw;
+  width: 85vw;
   height: auto;
 }
 
@@ -328,7 +321,7 @@ footer {
 }
 
 .ugmoCaption {
-  margin-top: 2500px;
+  margin-top: 2400px;
   display: inline-block;
 }
 
@@ -376,33 +369,33 @@ footer {
 
 .frisbeePictures1 {
   position: absolute;
-  right: 900px;
-  top: 950px;
+  right: 55vw;
+  bottom: 1450px;
 }
 
 .frisbeePictures1 img {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   max-width: 24vw;
 }
 
 .frisbeePictures2 {
   position: absolute;
-  right: 500px;
-  top: 950px;
+  right: 31.2vw;
+  bottom: 1450px;
 }
 
 .frisbeePictures2 img {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   max-width: 24vw;
 }
 
 .frisbeePictures3 {
   position: absolute;
-  right: 900px;
+  right: 55vw;
   top: 1350px;
 }
 
@@ -415,7 +408,7 @@ footer {
 
 .frisbeePictures4 {
   position: absolute;
-  right: 500px;
+  right: 31.2vw;
   top: 1350px;
 }
 
@@ -424,4 +417,117 @@ footer {
   left: 0;
   top: 0;
   max-width: 24vw;
+}
+
+/* ------------------------------- Contact page ------------------------------- */
+
+#contactBody {
+  height: 100vh;
+}
+
+#contactThanks {
+  position: absolute;
+  font-family: bodyText, sans-serif;
+  /* font-size: 20px; */
+  font-size: 1.2vw;
+  top: 35vh;
+  left: 11.4%;
+  right: 57.5%;
+  text-align: justify;
+}
+
+.resumeButton {
+  position: absolute;
+  right: 25vw;
+  top: 32vh;
+  background-color: var(--offBlack);
+  border: none;
+  color: white;
+  padding: 70px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resumeButton:hover {opacity: 1}
+
+/* ------------------------------- Projects page ------------------------------- */
+
+#projectBody {
+  height: 225vh;
+}
+
+#proj1container {
+  left: -20vw;
+  top: 20vh;
+  opacity: 0.9;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj1container:hover {
+  opacity: 1
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#proj2container {
+  right: -20vw;
+  top: 35vh;
+  opacity: 0.9;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj2container:hover {
+  opacity: 1
+}
+
+#proj3-1container {
+  left: -20vw;
+  top: 50vh;
+  opacity: 0.9;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj3-1container:hover {
+  opacity: 1
+}
+
+#proj3-2container {
+  right: -20vw;
+  top: 65vh;
+  opacity: 0.9;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  font: subtitles, sans-serif;
+}
+
+#proj3-2container:hover {
+  opacity: 1
 }
