@@ -461,9 +461,16 @@ footer {
   height: 225vh;
 }
 
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #proj1container {
   left: -20vw;
-  top: 20vh;
+  top: 25vh;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
@@ -477,16 +484,19 @@ footer {
   opacity: 1
 }
 
-.centered {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.whiteLink {
+  color: white;
+  text-decoration: none;
+}
+
+.whiteLink:visited {
+  color: white;
 }
 
 #proj2container {
   right: -20vw;
-  top: 35vh;
+  top: 40vh;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
@@ -502,7 +512,7 @@ footer {
 
 #proj3-1container {
   left: -20vw;
-  top: 50vh;
+  top: 55vh;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
@@ -518,7 +528,7 @@ footer {
 
 #proj3-2container {
   right: -20vw;
-  top: 65vh;
+  top: 70vh;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
