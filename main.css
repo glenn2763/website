@@ -458,7 +458,8 @@ footer {
 /* ------------------------------- Projects page ------------------------------- */
 
 #projectBody {
-  height: 225vh;
+  height: 1900px;
+  max-width: 100vw;
 }
 
 .centered {
@@ -469,8 +470,9 @@ footer {
 }
 
 #proj1container {
-  left: -20vw;
+  left: 10vw;
   top: 25vh;
+  width: 48vw;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
@@ -495,8 +497,9 @@ footer {
 }
 
 #proj2container {
-  right: -20vw;
+  left: 41vw;
   top: 40vh;
+  width: 48vw;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
@@ -511,8 +514,9 @@ footer {
 }
 
 #proj3-1container {
-  left: -20vw;
+  left: 10vw;
   top: 55vh;
+  width: 48vw;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
@@ -527,8 +531,9 @@ footer {
 }
 
 #proj3-2container {
-  right: -20vw;
+  left: 33vw;
   top: 70vh;
+  width: 64vw;
   opacity: 0.9;
   transition: 0.3s;
   position: relative;
