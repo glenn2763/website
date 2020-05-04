@@ -1,3 +1,3 @@
 # website
 First attempt at creating a personal website.
-*** NOT WORKING YET ***
+*** STILL IN BETA ***
